@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Questrial&display=swap');
+
+:root {
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-corpo: 'Questrial', sans-serif;
+
+    --fundo-escuro: #0F0F0F;
+    --fundo-escuro-fluido: #272829;
+    --fundo-claro: #FAF3F0;
+    --lilas: #D0BFFF;
+    --amarelo: #F4E869;
+    --laranja: #E25E3E;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    color: var(--fundo-claro);
+    background-color: var(--fundo-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+button {
+    font-family: var(--fonte-titulo);
+}
+
+a {
+    text-decoration: none;
+    color: var(--lilas);
+}
+
+a:hover {
+    color: var(--amarelo);
+}
+
+button {
+    border-radius: 100px;
+    padding: 0.3em 0.5em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 0.75em;
+    margin-top: 1em;
+    background-color: var(--lilas);
+}
+
+button:hover {
+    background-color: var(--amarelo);
+}
+
+input {
+    border-radius: 100px;
+    border: none;
+    font-family: var(--fonte-corpo);
+    margin: 1em 0;
+    padding: 0.75em;
+}
+
+.icone-lua {
+    display: none;
+}
+
+.logo-claro {
+    display: none;
+}
+
+/* modo claro */
+.modo-claro {
+    background-color: var(--fundo-claro);
+    color: var(--fundo-escuro);
+}
+
+.modo-claro .icone-lua {
+    display: block;
+}
+
+.modo-claro .icone-sol {
+    display: none;
+}
+
+.modo-btn {
+    width: auto;
+    padding: 5px 6px;
+    margin: 0.5em;
+}
+
+.modo {
+    display: flex;
+    justify-content: end;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modo-claro a {
+    text-decoration: none;
+    color: var(--fundo-escuro);
+}
+
+.modo-claro a:hover {
+    color: var(--laranja);
+}
+
+.modo-claro button:hover {
+    background-color: var(--laranja);
+}
