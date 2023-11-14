@@ -26,13 +26,13 @@
     <main>
         <div class="container-login container-centro">
             <h2>Recuperar Senha</h2>
-            <form>
+            <form method="post" action="recuperarProcesso.php">
 
                 <label for="cpf">CPF:</label>
                 <input type="text" id="cpf" name="cpf" required>
 
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
+                <input type="email" id="email" name="email" required>
 
                 <button type="submit">Recuperar senha</button>
                 <button type="submit"><a href="index.html">Cancelar</a></button>

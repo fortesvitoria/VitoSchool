@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrando cliente</title>
-</head>
-
-<body>
-
     <?php
 
     //importa dos dados do banco com método include()
@@ -36,7 +25,3 @@
     mysqli_close($banco);
 
     ?>
-
-</body>
-
-</html>
