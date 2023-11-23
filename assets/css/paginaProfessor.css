@@ -1,0 +1,19 @@
+.div-perfil {
+    display: flex;
+}
+.div-perfil-foto, .div-perfil-text {
+    padding: 3em;
+}
+
+.div-perfil-text {
+    flex-direction: column;
+}
+.container-perfil {
+    text-align: center;
+}
+
+.imagemUsuario {
+    border-radius: 100%;
+    width: 150px;
+    border: solid 3px var(--amarelo);
+}

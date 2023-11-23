@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitoSchool - LogIn</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/paginaProfessor.css">
+    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="modo">
+            <button id="modoBtn" class="modo-btn">
+                <span class="icone-sol"><img src="assets/images/sun.svg" alt="icone sol"></span>
+                <span class="icone-lua"><img src="assets/images/moon.svg" alt="icone lua"></span></button>
+        </div>
+        <div class="container-logo">
+            <img src="assets/images/logo.png" alt="imagem com o nome VitoSchool">
+        </div>
+
+    </header>
+    <main>
+        <div class="container-login container-perfil">
+            <h2>Bem vindo <span class="nome" id="nome" name="nome">USUARIO</span>!</h2>
+            <div class="div-perfil">
+            <div class="div-perfil-foto">
+                <form  method="post" action="cadastrar.php">
+                    <img src="assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario"> 
+                </div>
+                    <div class="div-perfil-texto">
+                    <label for="selecao">Minhas turmas:</label>
+                    <select id="selecao" name="opcaoCurso">
+                        <option value="Análise e desenvolvimento de sistemas">ADS NOITE 01/2023</option>
+                        <option value="Sistemas para internet">ADS TARDE 01/2023</option>
+                        <option value="Banco de dados com PHP">BANCO/PHP NOITE 01/2023</option>
+                    </select>
+                </div>    
+            </div>
+                    <button type="submit">Cadastrar</button>
+                    <button type="submit"><a href="index.html">Cancelar</a></button>
+                </form>
+            
+            
+    </main>
+    <footer>
+        <p>&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
+    </footer>
+    <script src="modo.js"></script>
+</body>
+
+</html>
