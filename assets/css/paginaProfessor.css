@@ -15,3 +15,7 @@
     width: 150px;
     border: solid 3px var(--amarelo);
 }
+
+.container-perfil button {
+    margin: 0.5em;
+}
