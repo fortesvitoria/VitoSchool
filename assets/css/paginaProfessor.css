@@ -1,3 +1,7 @@
+main {
+    
+}
+
 .div-perfil {
     display: flex;
     align-items: center;
@@ -22,4 +26,11 @@
 
 .linha-horizontal-laranja {
     padding-top: 1em;
+}
+
+.imagemProfessor {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    border: solid 2px var(--amarelo);
 }
