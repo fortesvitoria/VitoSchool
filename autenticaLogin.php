@@ -22,9 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Usuário encontrado, verificar a senha
         $row = $result->fetch_assoc();
         if ($senha === $row["senha"]) {
-            // // Autenticação bem-sucedida, redirecionar ou realizar outras ações
-            // $_SESSION["email"] = $email; // Iniciar a sessão com o e-mail
-            // header("Location: dashboard.php"); // Redirecionar para a página principal
+            header("Location: home.php"); // Redirecionar para a página principal
             echo "Senha CORRETA";
         } else {
         }
@@ -34,4 +32,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $banco->close();
 }
-

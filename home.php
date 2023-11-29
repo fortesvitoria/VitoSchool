@@ -7,7 +7,7 @@
     <title>VitoSchool - LogIn</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/paginaProfessor.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
 </head>
 
