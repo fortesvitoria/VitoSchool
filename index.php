@@ -35,7 +35,7 @@
                 <button type="submit">Login</button>
             </form>
 
-            <p><a href="recuperaSenha.html">Esqueceu sua senha?</a></p>
+            <p><a href="recuperaSenha.php">Esqueceu sua senha?</a></p>
         </div>
         <div>
             <span class="linha-vertical-laranja"><img src="assets/images/linha-vertical-laranja.png" alt=""></span>
