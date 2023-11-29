@@ -25,7 +25,7 @@
     <main>
         <div class="container-login">
             <h2>Login</h2>
-            <form method="post" action="autenticaLogin.php">
+            <form method="post" action="">
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" required>
 
@@ -45,7 +45,7 @@
                 <img src="assets/images/estudante.png" alt="imagem de uma estudante com livros">
                 <p>Transformando ideias em inovação. Conectamos sonhos à realidade por meio de soluções tecnológicas
                     criativas e estratégicas. Seja bem-vindo ao futuro da inovação.</p>
-                    <button type="button"><a href="cadastro.html">Cadastre-se</a></button>
+                    <button type="button"><a href="cadastro.php">Cadastre-se</a></button>
             </div>
         </div>        
         <?php 
