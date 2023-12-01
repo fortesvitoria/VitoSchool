@@ -86,7 +86,7 @@
         ?>
     </main>
     <footer>
-        <p>&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
+        <p class="copyright">&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
     </footer>
     <script src="modo.js"></script>
 </body>
