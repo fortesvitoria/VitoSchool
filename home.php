@@ -18,10 +18,10 @@
 
         <nav class="cabecalho-menu">
             <div class="div-nav">
-                <a href="home.php"><img class="icone-nav" src="assets/images/icone.png" alt="icone vs"></a>
+                <a href="index.php"><img class="icone-nav" src="assets/images/icone.png" alt="icone vs"></a>
             </div>
             <div>
-                <a class="cabecalho-item">Editar perfil</a>            
+                <a class="cabecalho-item" href="perfil.php">Editar perfil</a>            
             <a class="cabecalho-item">Gerenciar meus conteúdos</a>
             <a class="cabecalho-item">Sair</a>
             </div>
@@ -54,7 +54,6 @@
                     </div>
                 </div>
             </div>
-            </form>
 
             <div class="menu-home">
                 <button type="button"><a href="">Temas de estudos</a></button>
