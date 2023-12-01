@@ -1,0 +1,16 @@
+.cabecalho-menu{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-item {
+    padding: 1em;
+    font-size: 18px;
+}
+
+.icone-nav {
+    width: 3vw;
+    justify-content: start;
+    margin-left: 1em;
+}

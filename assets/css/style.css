@@ -16,6 +16,7 @@ body {
     font-family: var(--fonte-corpo);
     color: var(--fundo-claro);
     font-weight: 400;
+    margin: 0;
     background-color: var(--fundo-escuro);
     display: flex;
     flex-direction: column;

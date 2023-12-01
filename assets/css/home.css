@@ -1,12 +1,9 @@
-/* main {
-    
-} */
-
 .div-perfil {
     display: flex;
     align-items: center;
 }
-.div-perfil-foto, .div-perfil-text {
+
+.div-perfil-foto, .div-perfil-label {
     padding: 3em;
 }
 
@@ -26,11 +23,19 @@
 
 .linha-horizontal-laranja {
     padding-top: 1em;
+    margin: 2em;
 }
 
 .imagemProfessor {
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    border: solid 2px var(--amarelo);
+    border: solid 3px var(--lilas);
+    margin: 0.75em;
 }
+
+.imagemProfessor:hover {
+    border: solid 3px var(--laranja);
+}
+
+
