@@ -1,23 +1,29 @@
+/* CSS para configurações gerais */
+
+/* Importa fontes google */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Questrial&display=swap');
 
+/* Cria variáveis com cores e fontes */
 :root {
     --fonte-titulo: 'Montserrat', sans-serif;
     --fonte-corpo: 'Questrial', sans-serif;
 
-    --fundo-escuro: #0F0F0F;
-    --fundo-escuro-fluido: #272829;
-    --fundo-claro: #FAF3F0;
-    --lilas: #D0BFFF;
-    --amarelo: #F4E869;
+    --preto: #0F0F0F;
+    --grafite: #272829;
+    --off-white: #FFFFDE;
+    --lilas: #BA94D1;
+    --amarelo: #F1C93B;
     --laranja: #E25E3E;
 }
 
+/* Configurações básicas */
+
 body {
     font-family: var(--fonte-corpo);
-    color: var(--fundo-claro);
+    color: var(--off-white);
     font-weight: 400;
     margin: 0;
-    background-color: var(--fundo-escuro);
+    background-color: var(--preto);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +42,7 @@ a {
 }
 
 button a:hover, button a {
-    color: var(--fundo-escuro);
+    color: var(--preto);
 }
 
 a:hover {
@@ -76,8 +82,8 @@ input, select {
 
 /* modo claro */
 .modo-claro {
-    background-color: var(--fundo-claro);
-    color: var(--fundo-escuro);
+    background-color: var(--off-white);
+    color: var(--preto);
 }
 
 .modo-claro .icone-lua {
@@ -113,7 +119,7 @@ input, select {
 
 .modo-claro a {
     text-decoration: none;
-    color: var(--fundo-escuro);
+    color: var(--preto);
 }
 
 .modo-claro a:hover {
@@ -121,7 +127,7 @@ input, select {
 }
 
 .modo-claro button a:hover {
-    color: var(--fundo-escuro);
+    color: var(--preto);
 }
 
 .modo-claro button:hover {
