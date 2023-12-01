@@ -1,4 +1,4 @@
-/* CSS para configurações gerais */
+/* CSS para configurações gerais. Obs o modo principal é o escuro */
 
 /* Importa fontes google */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Questrial&display=swap');
@@ -21,7 +21,7 @@
 body {
     font-family: var(--fonte-corpo);
     color: var(--off-white);
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     background-color: var(--preto);
     display: flex;
@@ -29,9 +29,20 @@ body {
     align-items: center;
 }
 
+main {
+    background-color: var(--grafite);
+    padding: 2em;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1,
 h2,
 h3,
+h4,
 button {
     font-family: var(--fonte-titulo);
 }
@@ -41,7 +52,13 @@ a {
     color: var(--lilas);
 }
 
-button a:hover, button a {
+form, .container-info {
+    display: flex;
+    flex-direction: column;
+}
+
+button a:hover,
+button a {
     color: var(--preto);
 }
 
@@ -64,12 +81,14 @@ button:hover {
     background-color: var(--amarelo);
 }
 
-input, select {
+input,
+select {
     border-radius: 100px;
     border: none;
     font-family: var(--fonte-corpo);
     margin: 1em 0;
     padding: 0.75em;
+    background-color: var(--off-white);
 }
 
 .icone-lua {
@@ -80,7 +99,17 @@ input, select {
     display: none;
 }
 
-/* modo claro */
+/* 
+.
+.
+.
+.
+MODO CLARO
+.
+.
+.
+.
+*/
 .modo-claro {
     background-color: var(--off-white);
     color: var(--preto);
@@ -132,4 +161,7 @@ input, select {
 
 .modo-claro button:hover {
     background-color: var(--laranja);
+}
+.modo-claro main {
+    background-color: var(--amarelo);
 }

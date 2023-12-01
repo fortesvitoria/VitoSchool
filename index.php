@@ -14,8 +14,8 @@
     <header class="cabecalho">
         <div class="modo">
             <button id="modoBtn" class="modo-btn">
-            <span class="icone-sol"><img src="assets/images/sun.svg" alt="icone sol"></span>
-            <span class="icone-lua"><img src="assets/images/moon.svg" alt="icone lua"></span></button>
+                <span class="icone-sol"><img src="assets/images/sun.svg" alt="icone sol"></span>
+                <span class="icone-lua"><img src="assets/images/moon.svg" alt="icone lua"></span></button>
         </div>
         <div class="container-logo">
             <a href="index.html"><img src="assets/images/logo.png" alt="imagem com o nome VitoSchool"></a>
@@ -45,9 +45,9 @@
                 <img src="assets/images/estudante.png" alt="imagem de uma estudante com livros">
                 <p>Transformando ideias em inovação. Conectamos sonhos à realidade por meio de soluções tecnológicas
                     criativas e estratégicas. Seja bem-vindo ao futuro da inovação.</p>
-                    <button type="button"><a href="cadastro.php">Cadastre-se</a></button>
+                <button type="button"><a href="cadastro.php">Cadastre-se</a></button>
             </div>
-        </div>        
+        </div>
         <?php 
         session_start();
 

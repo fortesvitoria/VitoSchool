@@ -1,24 +1,6 @@
+/* CSS da seção de login, página index.php. Obs o modo principal é o escuro  */
+
 .container-login{
     width: 50%;
     margin: 2em;
-}
-
-form, .container-info {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    background-color: var(--fundo-escuro-fluido);
-    padding: 2em;
-    width: 70%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* modo claro */
-.modo-claro main {
-    background-color: var(--amarelo);
 }
