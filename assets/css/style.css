@@ -67,7 +67,7 @@ button a {
     color: var(--preto);
 }
 
-button, .btn-upload {
+button {
     border-radius: 100px!important;
     color: var(--preto);
     padding: 0.3em 0.5em;
@@ -81,7 +81,7 @@ button, .btn-upload {
 
 
 
-button:hover, .btn-upload:hover {
+button:hover {
     background-color: var(--amarelo)!important;
 }
 

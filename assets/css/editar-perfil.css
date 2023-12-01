@@ -1,8 +1,14 @@
+/* CSS editarPerfil.php. Obs o modo principal é o escuro */
+
+.btn-upload {
+    
+}
  .div-envia-img {
     display: flex;
  }
  
  .form-control {
+    margin-right: 2em;
     width: 100%;
     font-size: 1rem;
     color: var(--preto);
@@ -22,6 +28,6 @@
   }
 
   .form-control::file-selector-button {
-    margin: -1.1rem -0.75rem;
+    margin: -2rem -0.75rem;
     -webkit-margin-end: 0.75rem;
   }

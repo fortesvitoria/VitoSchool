@@ -21,9 +21,9 @@
                 <a href="index.php"><img class="icone-nav" src="assets/images/icone.png" alt="icone vs"></a>
             </div>
             <div>
-                <a class="cabecalho-item" href="perfil.php">Editar perfil</a>            
-            <a class="cabecalho-item">Gerenciar meus conteúdos</a>
-            <a class="cabecalho-item">Sair</a>
+                <a class="cabecalho-item" href="perfil.php">Editar perfil</a>
+                <a class="cabecalho-item">Gerenciar meus conteúdos</a>
+                <a class="cabecalho-item">Sair</a>
             </div>
             <div class="modo">
                 <button id="modoBtn" class="modo-btn">
@@ -40,8 +40,7 @@
             <div class="div-perfil">
                 <div class="div-perfil-foto">
                     <form method="post" action="cadastrar.php">
-                        <img src="assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora"
-                            class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">
+                        <img src="assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">
                 </div>
                 <div class="div-perfil-label">
                     <label for="selecao">Minhas turmas:</label>
@@ -62,20 +61,14 @@
                 <button type="button"><a href="">Bate-papo</a></button>
             </div>
 
-            <span><img src="assets/images/linha-horizontal-laranja.png" alt="linha horinzontal laranja"
-                    class="linha-horizontal-laranja"></span>
+            <span><img src="assets/images/linha-horizontal-laranja.png" alt="linha horinzontal laranja" class="linha-horizontal-laranja"></span>
 
             <div class="div-professores">
-                <img src="assets/images/professor1.jpg" alt="Imagem de um professor(a)" class="imagemProfessor"
-                    name="imagemProfessor" id="imagemProfessor">
-                <img src="assets/images/professor2.jpg" alt="Imagem de um professor(a)" class="imagemProfessor"
-                    name="imagemProfessor" id="imagemProfessor">
-                <img src="assets/images/professor3.jpg" alt="Imagem de um professor(a)" class="imagemProfessor"
-                    name="imagemProfessor" id="imagemProfessor">
-                <img src="assets/images/professor4.jpg" alt="Imagem de um professor(a)" class="imagemProfessor"
-                    name="imagemProfessor" id="imagemProfessor">
-                <img src="assets/images/professor5.jpg" alt="Imagem de um professor(a)" class="imagemProfessor"
-                    name="imagemProfessor" id="imagemProfessor">
+                <img src="assets/images/professor1.jpg" alt="Imagem de um professor(a)" class="imagemProfessor" name="imagemProfessor" id="imagemProfessor">
+                <img src="assets/images/professor2.jpg" alt="Imagem de um professor(a)" class="imagemProfessor" name="imagemProfessor" id="imagemProfessor">
+                <img src="assets/images/professor3.jpg" alt="Imagem de um professor(a)" class="imagemProfessor" name="imagemProfessor" id="imagemProfessor">
+                <img src="assets/images/professor4.jpg" alt="Imagem de um professor(a)" class="imagemProfessor" name="imagemProfessor" id="imagemProfessor">
+                <img src="assets/images/professor5.jpg" alt="Imagem de um professor(a)" class="imagemProfessor" name="imagemProfessor" id="imagemProfessor">
 
             </div>
 
