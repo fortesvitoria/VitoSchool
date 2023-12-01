@@ -61,7 +61,7 @@
 
                 <div class="checkbox">
                     <input type="checkbox" id="minhaCheckBox" name="opcao" value="valor">
-                <label for="minhaCheckBox">Concordo com os termos de uso e política de privacidade.</label>
+                <label for="minhaCheckBox" class="fonte-leve">Concordo com os termos de uso e política de privacidade.</label>
                 </div>
 
                 <button type="submit">Cadastrar</button>
@@ -69,7 +69,7 @@
             </form>
     </main>
     <footer>
-        <p>&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
+        <p class="fonte-leve">&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
     </footer>
     <script src="modo.js"></script>
 </body>
