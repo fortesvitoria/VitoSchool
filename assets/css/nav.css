@@ -1,3 +1,5 @@
+/* CSS da nav bar das páginas que a utilizam. Obs o modo principal é o escuro  */
+
 .cabecalho-menu {
     display: flex; 
     align-items: center;

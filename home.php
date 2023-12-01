@@ -1,3 +1,4 @@
+<!-- Área do professor -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
