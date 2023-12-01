@@ -48,8 +48,13 @@ button {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: var(--lilas);
+}
+
+a:hover {
+    color: var(--amarelo);
 }
 
 form, .container-info {
@@ -60,10 +65,6 @@ form, .container-info {
 button a:hover,
 button a {
     color: var(--preto);
-}
-
-a:hover {
-    color: var(--amarelo);
 }
 
 button {
