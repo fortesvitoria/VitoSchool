@@ -61,6 +61,9 @@ form, .container-info {
     display: flex;
     flex-direction: column;
 }
+.form-padrao {
+    width: 35rem;
+}
 
 button a:hover,
 button a {

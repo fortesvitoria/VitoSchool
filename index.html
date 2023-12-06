@@ -27,7 +27,7 @@
     <main>
         <div class="container-login">
             <h2>Login</h2>
-            <form method="post" action="">
+            <form method="post" action="codigosPHP/validaLogin.php">
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" required>
 
@@ -37,7 +37,7 @@
                 <button type="submit">Login</button>
             </form>
 
-            <p><a href="recuperaSenha.php">Esqueceu sua senha?</a></p>
+            <p><a href="recuperaSenha.html">Esqueceu sua senha?</a></p>
         </div>
         <div>
             <span class="linha-vertical-laranja"><img src="assets/images/linha-vertical-laranja.png" alt=""></span>
@@ -47,50 +47,14 @@
                 <img src="assets/images/estudante.png" alt="imagem de uma estudante com livros">
                 <p>Transformando ideias em inovação. Conectamos sonhos à realidade por meio de soluções tecnológicas
                     criativas e estratégicas. Seja bem-vindo ao futuro da inovação.</p>
-                <button type="button"><a href="cadastro.php">Cadastre-se</a></button>
+                <button type="button"><a href="front-end/cadastro.html">Cadastre-se</a></button>
             </div>
         </div>
-        <?php 
-        session_start();
-
-        //importa dos dados do banco com método include()
-        include("conexao.php");
-        
-        // Verificar se o formulário foi enviado
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-            // Obter dados do formulário
-            $email = $_POST["email"];
-            $senha = $_POST["senha"];
-        
-            // Consulta SQL para verificar as credenciais
-            $sql = "SELECT email, senha FROM cadastro WHERE email = '$email'";
-        
-            $result = $banco->query($sql);
-        
-        
-        
-            if ($result->num_rows > 0) {
-                // Usuário encontrado, verificar a senha
-                $row = $result->fetch_assoc();
-                if ($senha === $row["senha"]) {
-                    header("Location: home.php"); // Redirecionar para a página principal
-                    echo "Senha CORRETA";
-                } else {
-                }
-            } else {
-                echo "E-mail não encontrado";
-            }
-        
-            $banco->close();
-        }
-        
-        ?>
     </main>
     <footer>
         <p class="fonte-leve">&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
     </footer>
-    <script src="modo.js"></script>
+    <script src="js/modo.js"></script>
 </body>
 
 </html>

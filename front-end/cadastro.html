@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VitoSchool - LogIn</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/cadastro.css">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="shortcut icon" href="../assets/images/icone.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="modo">
             <button id="modoBtn" class="modo-btn">
-                <span class="icone-sol"><img src="assets/images/sun.svg" alt="icone sol"></span>
-                <span class="icone-lua"><img src="assets/images/moon.svg" alt="icone lua"></span></button>
+                <span class="icone-sol"><img src="../assets/images/sun.svg" alt="icone sol"></span>
+                <span class="icone-lua"><img src="../assets/images/moon.svg" alt="icone lua"></span></button>
         </div>
         <div class="container-logo">
-            <a href="index.html"><img src="assets/images/logo.png" alt="imagem com o nome VitoSchool"></a>
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="imagem com o nome VitoSchool"></a>
         </div>
 
     </header>
     <main>
         <div class="container-login container-centro">
             <h2>Cadastro</h2>
-            <form  method="post" action="cadastrar.php">
+            <form  method="post" action="../codigosPHP/cadastrar.php">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -37,7 +36,7 @@
                 <input type="text" id="cpf" name="cpf" required>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <input type="tel" id="telefone" name="telefone">
 
                 <label for="celular">Celular:</label>
                 <input type="tel" id="celular" name="celular" required>
@@ -71,7 +70,7 @@
     <footer>
         <p class="fonte-leve">&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
     </footer>
-    <script src="modo.js"></script>
+    <script src="../js/modo.js"></script>
 </body>
 
 </html>

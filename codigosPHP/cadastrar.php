@@ -14,7 +14,7 @@
     $senha = $_POST["senha"];
 
     //query do sql
-    $sql = mysqli_query($banco, "insert into cadastro values(null, '$nome', '$sobrenome', '$cpf',  '$telefone',  '$celular',  '$email', '$curso',  '$senha');");
+    $sql = mysqli_query($banco, "insert into cadastro values(null, '$nome', '$sobrenome', '$cpf',  '$telefone',  '$celular',  '$email', '$curso',  '$senha', null);");
 
     if ($sql) {
         echo "<br>Cliente cadastrado :)";
