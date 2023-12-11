@@ -1,4 +1,5 @@
 <!-- Área do professor -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,29 +15,41 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <?php
 
-        <nav class="cabecalho-menu">
-            <div class="div-nav">
-                <a href="index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
-            </div>
-            <div>
-                <a class="cabecalho-item" href="editarPerfil.html">Editar perfil</a>
-                <a class="cabecalho-item" href="">Gerenciar meus conteúdos</a>
-                <a class="cabecalho-item" href="../index.html">Sair</a>
-            </div>
-            <div class="modo">
-                <button id="modoBtn" class="modo-btn">
-                    <span class="icone-sol"><img src="../assets/images/sun.svg" alt="icone sol"></span>
-                    <span class="icone-lua"><img src="../assets/images/moon.svg" alt="icone lua"></span></button>
-            </div>
-        </nav>
+    ?>
+
+    <nav class="cabecalho-menu">
+        <div class="div-nav">
+            <a href="index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
+        </div>
+        <div>
+            <a class="cabecalho-item" href="editarPerfil.html">Editar perfil</a>
+            <a class="cabecalho-item" href="">Gerenciar meus conteúdos</a>
+            <a class="cabecalho-item" href="../index.html">Sair</a>
+        </div>
+        <div class="modo">
+            <button id="modoBtn" class="modo-btn">
+                <span class="icone-sol"><img src="../assets/images/sun.svg" alt="icone sol"></span>
+                <span class="icone-lua"><img src="../assets/images/moon.svg" alt="icone lua"></span></button>
+        </div>
+    </nav>
 
 
     </header>
     <main class="">
         <div class="container-perfil-home">
-            <h2>Bem vindo <span class="nome" id="nome" name="nome">USUARIO</span>!</h2>
+            <!-- <h2>Bem vindo <span class="nome" id="nome" name="nome"> -->
+                    <?php
+                    // Verifica se o nome do usuário foi passado na URL
+                    if (isset($_GET['nome'])) {
+                        $nomeUsuario = $_GET['nome'];
+                        echo "<h2>Bem-vindo, $nomeUsuario!</h2>";
+                    } else {
+                        echo "<h2>Não achou o nome!</h2>";
+                    }
+                    ?>
+                <!-- </span>!</h2> -->
             <div class="div-perfil">
                 <div class="div-perfil-foto">
                     <form method="post" action="cadastrar.php">
