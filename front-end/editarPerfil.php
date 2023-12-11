@@ -42,15 +42,22 @@
                 <form action="../codigosPHP/carregarImagem.php" method="post">
                     <label for="cpf">Digite o cpf da Imagem:</label>
                     <input type="text" cpf="cpf" name="cpf" required><br><br>
-            
-                    <input type="submit" value="Carregar Imagem">
-                </form>
-                
-                <div cpf="imagemDiv">
-                    <!-- Aqui será carregada a imagem -->
-                </div>
 
-                <form class="form-padrao" method="post" action="../codigosPHP/insereBlobBanco.php" enctype="multipart/form-data">
+                    <input type="submit" value="Carregar Imagem">
+
+                    <?php
+                    // Verifica se o nome do usuário foi passado na URL
+                    if (isset($_GET['nome'])) {
+                        $nomeUsuario = $_GET['nome'];
+                        echo "<h2>Bem-vindo(a), $nomeUsuario!</h2>";
+                    } else {
+                        echo "<h2>Não achou o nome!</h2>";
+                    }
+                    ?>
+                </form>
+
+                <form class="form-padrao" method="post" action="../codigosPHP/insereBlobBanco.php"
+                    enctype="multipart/form-data">
                     <div class="div-perfil-foto container-perfil-home">
                         <img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora"
                             class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">

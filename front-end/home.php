@@ -21,7 +21,7 @@
 
     <nav class="cabecalho-menu">
         <div class="div-nav">
-            <a href="index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
+            <a href="../index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
         </div>
         <div>
             <a class="cabecalho-item" href="editarPerfil.html">Editar perfil</a>
@@ -39,7 +39,6 @@
     </header>
     <main class="">
         <div class="container-perfil-home">
-            <!-- <h2>Bem vindo <span class="nome" id="nome" name="nome"> -->
                     <?php
                     // Verifica se o nome do usuário foi passado na URL
                     if (isset($_GET['nome'])) {
@@ -49,7 +48,6 @@
                         echo "<h2>Não achou o nome!</h2>";
                     }
                     ?>
-                <!-- </span>!</h2> -->
             <div class="div-perfil">
                 <div class="div-perfil-foto">
                     <form method="post" action="cadastrar.php">
