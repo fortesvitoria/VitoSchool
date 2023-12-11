@@ -44,7 +44,7 @@
                     // Verifica se o nome do usuário foi passado na URL
                     if (isset($_GET['nome'])) {
                         $nomeUsuario = $_GET['nome'];
-                        echo "<h2>Bem-vindo, $nomeUsuario!</h2>";
+                        echo "<h2>Bem-vindo(a), $nomeUsuario!</h2>";
                     } else {
                         echo "<h2>Não achou o nome!</h2>";
                     }
