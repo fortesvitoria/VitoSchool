@@ -1,3 +1,5 @@
+
+
 <?php
 // Inclui o arquivo de conexão com o banco de dados
 include("conexao.php");
@@ -14,9 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Define os headers para indicar que é uma imagem
         header("Content-type: image/jpeg"); // Substitua por mime type adequado se necessário
-        echo $imagem_binaria; // Exibe a imagem diretamente na tela
+                echo $imagem_binaria; // Exibe a imagem diretamente na tela
     } else {
         echo "Imagem não encontrada.";
     }
 }
 ?>  
+
+

@@ -10,6 +10,7 @@
 
     --preto: #0F0F0F;
     --grafite: #272829;
+    --cinza : #474747;;
     --off-white: #FFFFDE;
     --lilas: #BA94D1;
     --amarelo: #F1C93B;
@@ -21,7 +22,7 @@
 body {
     font-family: var(--fonte-corpo);
     color: var(--off-white);
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
     background-color: var(--preto);
     display: flex;

@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VitoSchool - LogIn</title>
+    <title>VitoSchool - Home</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/home.css">
@@ -24,7 +24,7 @@
             <a href="../index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
         </div>
         <div>
-            <a class="cabecalho-item" href="editarPerfil.html">Editar perfil</a>
+            <a class="cabecalho-item" href="editarPerfil.php">Editar perfil</a>
             <a class="cabecalho-item" href="">Gerenciar meus conteúdos</a>
             <a class="cabecalho-item" href="../index.html">Sair</a>
         </div>
@@ -67,7 +67,7 @@
 
             <div class="menu-home">
                 <button type="button"><a href="">Temas de estudos</a></button>
-                <button type="button"><a href="">Materiais</a></button>
+                <button type="button"><a href="materiais.html">Materiais</a></button>
                 <button type="button"><a href="">Usuários</a></button>
                 <button type="button"><a href="">Bate-papo</a></button>
             </div>

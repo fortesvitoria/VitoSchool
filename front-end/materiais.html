@@ -1,0 +1,95 @@
+<!-- Área do professor -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitoSchool - Materiais </title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">    
+    <link rel="stylesheet" href="../assets/css/editar-perfil.css">
+    <link rel="stylesheet" href="../assets/css/tabelas.css"> 
+    <link rel="shortcut icon" href="../assets/images/icone.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="cabecalho-menu">
+        <div class="div-nav">
+            <a href="../index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
+        </div>
+        <div>
+            <a class="cabecalho-item" href="editarPerfil.php">Editar perfil</a>
+            <a class="cabecalho-item" href="">Gerenciar meus conteúdos</a>
+            <a class="cabecalho-item" href="../index.html">Sair</a>
+        </div>
+        <div class="modo">
+            <button id="modoBtn" class="modo-btn">
+                <span class="icone-sol"><img src="../assets/images/sun.svg" alt="icone sol"></span>
+                <span class="icone-lua"><img src="../assets/images/moon.svg" alt="icone lua"></span></button>
+        </div>
+    </nav>
+
+
+    </header>
+    <main class="">
+        <div class="container-perfil-home">
+
+            <form class="form-padrao" method="post" action="../codigosPHP/insereBlobBanco.php"
+                enctype="multipart/form-data">
+                <div class="div-perfil-foto container-perfil-home">
+                    <img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora"
+                        class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">
+                </div>
+
+                <label for="material">Selecione o material que deseja enviar:</label>
+                <input type="file" class="form-control" id="material" name="material" accept="/*" required>
+
+                <label for="sobreMaterial">Digite algo sobre o material:</label>
+                    <input type="text" id="sobreMaterial" name="sobreMaterial" required>
+
+                    <button type="submit">Enviar</button>
+
+            </form>
+
+            <span><img src="../assets/images/linha-horizontal-laranja.png" alt="linha horinzontal laranja"
+                    class="linha-horizontal-laranja"></span>
+                    <div class="container-tabela-materiais">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th class="th-esquerda">Material</th>
+                            <th class="th-direita">Sobre</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Artigo-PHP-Milton Neves.pdf</td>
+                            <td>PHP Avançado</td>
+                          </tr>
+                          <tr>
+                            <td>HTML básico.pdf</td>
+                            <td>HTML para inciantes</td>
+                          </tr>
+                          <tr>
+                            <td>JAVA-interfaces.mp4</td>
+                            <td>Java intermediário</td>
+                          </tr>
+                          <!-- Adicione mais linhas conforme necessário -->
+                        </tbody>
+                      </table>
+                      </div>
+                      
+
+
+    </main>
+    <footer>
+        <p class="fonte-leve">&copy; 2023 Vitória Fortes. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/modo.js"></script>
+</body>
+
+</html>

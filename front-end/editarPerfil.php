@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VitoSchool - LogIn</title>
+    <title>VitoSchool - Editar perfil</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
@@ -21,7 +21,7 @@
                 <a href="../index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
             </div>
             <div>
-                <a class="cabecalho-item" href="../front-end/home.html">Perfil</a>
+                <a class="cabecalho-item" href="../front-end/home.php">Perfil</a>
                 <a class="cabecalho-item" href="">Gerenciar meus conteúdos</a>
                 <a class="cabecalho-item" href="../index.html">Sair</a>
             </div>
