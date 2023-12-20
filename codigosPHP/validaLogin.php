@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Usuário autenticado com sucesso
         $row = $result->fetch_assoc();
         $nomeUsuario = $row['nome'];
+        session_start();
+        $_SESSION['CPF'] = $row['cpf'];
         // Redirecionar para a página de boas-vindas
         header("Location: ../front-end/home.php?nome=$nomeUsuario");
     } else {

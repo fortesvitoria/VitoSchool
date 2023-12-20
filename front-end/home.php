@@ -15,10 +15,6 @@
 </head>
 
 <body>
-    <?php
-
-    ?>
-
     <nav class="cabecalho-menu">
         <div class="div-nav">
             <a href="../index.html"><img class="icone-nav" src="../assets/images/icone.png" alt="icone vs"></a>
@@ -39,7 +35,7 @@
     </header>
     <main class="">
         <div class="container-perfil-home">
-                    <?php
+                    <!-- <?php
                     // Verifica se o nome do usuário foi passado na URL
                     if (isset($_GET['nome'])) {
                         $nomeUsuario = $_GET['nome'];
@@ -47,11 +43,43 @@
                     } else {
                         echo "<h2>Não achou o nome!</h2>";
                     }
-                    ?>
+                    ?> -->
             <div class="div-perfil">
                 <div class="div-perfil-foto">
-                    <form method="post" action="cadastrar.php">
-                        <img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">
+                <?php
+                include("../codigosPHP/conexao.php");
+                session_start();
+                $section = $_SESSION['CPF'];
+                //echo $section;
+
+                $verificaFoto = mysqli_query($banco, "SELECT foto FROM cadastro WHERE cpf = '$section'");
+
+                if (!$verificaFoto) {
+                    // Se houver um erro na consulta
+                    echo "Erro na consulta: " . mysqli_error($banco);
+                } else {
+                    if (mysqli_num_rows($verificaFoto) > 0) {
+                        // Se houver resultados
+                        $dadosFoto = mysqli_fetch_assoc($verificaFoto);
+                        $foto = $dadosFoto['foto'];
+                        // Verificar se a foto é NULL
+                        if (is_null($foto)) {
+                            // Se for NULL, exibir uma imagem padrão
+                            echo '<img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">';
+                        } else {
+                             // Se não for NULL, mostrar a imagem do banco de dados
+                            $base64 = base64_encode($foto); // Convertendo o BLOB para base64
+                            $imagemData = 'data:image/jpeg;base64,' . $base64; // Criando a URL base64 para a imagem
+                            echo '<img src="' . $imagemData . '" alt="Imagem de perfil" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">';
+        
+                        }
+                    } else {
+                        // Se não houver resultados para o CPF especificado
+                        echo '<img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">';
+                    }
+                }
+                mysqli_close($banco);
+                ?>
                 </div>
                 <div class="div-perfil-label">
                     <label for="selecao">Minhas turmas:</label>

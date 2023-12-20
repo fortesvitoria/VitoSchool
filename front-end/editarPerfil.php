@@ -38,42 +38,46 @@
         <div class="container-perfil">
             <h2>Dados pessoais</h2>
             <div class="div-perfil">
-
-                <form action="../codigosPHP/carregarImagem.php" method="post">
-                    <label for="cpf">Digite o cpf da Imagem:</label>
-                    <input type="text" cpf="cpf" name="cpf" required><br><br>
-
-                    <input type="submit" value="Carregar Imagem">
-
-                    <?php
-                    // Verifica se o nome do usuário foi passado na URL
-                    if (isset($_GET['nome'])) {
-                        $nomeUsuario = $_GET['nome'];
-                        echo "<h2>Bem-vindo(a), $nomeUsuario!</h2>";
-                    } else {
-                        echo "<h2>Não achou o nome!</h2>";
-                    }
-                    ?>
-                </form>
-
-                <form class="form-padrao" method="post" action="../codigosPHP/insereBlobBanco.php"
-                    enctype="multipart/form-data">
+                <form class="form-padrao" method="post" action="../codigosPHP/insereBlobBanco.php" enctype="multipart/form-data">
                     <div class="div-perfil-foto container-perfil-home">
-                        <img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora"
-                            class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">
+                    <?php
+                include("../codigosPHP/conexao.php");
+                session_start();
+                $section = $_SESSION['CPF'];
+                //echo $section;
+
+                $verificaFoto = mysqli_query($banco, "SELECT foto FROM cadastro WHERE cpf = '$section'");
+
+                if (!$verificaFoto) {
+                    // Se houver um erro na consulta
+                    echo "Erro na consulta: " . mysqli_error($banco);
+                } else {
+                    if (mysqli_num_rows($verificaFoto) > 0) {
+                        // Se houver resultados
+                        $dadosFoto = mysqli_fetch_assoc($verificaFoto);
+                        $foto = $dadosFoto['foto'];
+                        // Verificar se a foto é NULL
+                        if (is_null($foto)) {
+                            // Se for NULL, exibir uma imagem padrão
+                            echo '<img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">';
+                        } else {
+                             // Se não for NULL, mostrar a imagem do banco de dados
+                            $base64 = base64_encode($foto); // Convertendo o BLOB para base64
+                            $imagemData = 'data:image/jpeg;base64,' . $base64; // Criando a URL base64 para a imagem
+                            echo '<img src="' . $imagemData . '" alt="Imagem de perfil" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">';
+        
+                        }
+                    } else {
+                        // Se não houver resultados para o CPF especificado
+                        echo '<img src="../assets/images/profesoraPerfil.jpg" alt="Imagem de perfil da professora" class="imagemUsuario" name="imagemUsuario" id="imagemUsuario">';
+                    }
+                }
+                mysqli_close($banco);
+                ?>
                     </div>
 
-                    <label for="img-perfil">Trocar imagem de perfil:</label>
-                    <input type="file" class="form-control" id="img-perfil" name="img-perfil" accept="image/*" required>
-
-                    <!-- <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required>
-
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" required>
-
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required> -->
+                    <label for="imagem">Trocar imagem de perfil:</label>
+                    <input type="file" class="form-control" id="imagem" name="imagem" accept="image/*" required>
 
 
                     <label for="cpf">Para continuar digite seu CPF:</label>
